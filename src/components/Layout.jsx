@@ -7,7 +7,7 @@ export function Navbar() {
   return <header className="site-header"><nav className="nav shell" aria-label="Main navigation">
     <Link className="logo" to="/" onClick={close}>Rent<span>Sphere</span></Link>
     <button className="menu-toggle" aria-label="Toggle menu" aria-expanded={open} onClick={() => setOpen(!open)}><i></i><i></i><i></i></button>
-    <div className={`nav-links ${open ? 'is-open' : ''}`}><NavLink to="/" onClick={close}>Home</NavLink><NavLink to="/properties" onClick={close}>Properties</NavLink><NavLink to="/vehicles" onClick={close}>Vehicles</NavLink><a href="/#about" onClick={close}>About</a><a href="/#contact" onClick={close}>Contact</a><NavLink className="nav-login" to="/login" onClick={close}>Log in</NavLink></div>
+    <div className={`nav-links ${open ? 'is-open' : ''}`}><NavLink to="/" onClick={close}>Home</NavLink><NavLink to="/properties" onClick={close}>Properties</NavLink><NavLink to="/vehicles" onClick={close}>Vehicles</NavLink><NavLink to="/about" onClick={close}>About</NavLink><NavLink to="/contact" onClick={close}>Contact</NavLink><NavLink className="nav-login" to="/login" onClick={close}>Log in</NavLink></div>
   </nav></header>;
 }
 
