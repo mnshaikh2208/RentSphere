@@ -16,6 +16,12 @@ export function AboutPage() {
 
 
 
+
+
+
+
+
+
 export function ContactPage() {
   const [form,setForm] = useState({name:'',email:'',phone:'',message:''}); const [error,setError] = useState({}); const [sent,setSent] = useState(false);
   const update = e => { setForm({...form,[e.target.name]:e.target.value}); setError({...error,[e.target.name]:''}); };
